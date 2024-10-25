@@ -6,7 +6,6 @@
 def courseslection():
     x=1
     classlist=[]
-    print("Make sure that when you're inputting course IDs, there is a space between the subject and the ID (eg. COS 2005, not COS2005)")
     while x>0:
         print("Please input a course ID")
         classlist.append(input())
