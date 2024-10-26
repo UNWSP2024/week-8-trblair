@@ -15,8 +15,8 @@ def initials_generator(personsName):
         finallist.append(x[0])
     personsInitials=''.join(finallist)
     return personsInitials.strip()
-
-personsName = input('Enter the users first, middle, and last name\n')
+print("Enter the users first, middle, and last name\n")
+personsName = input('')
 
 initials = initials_generator(personsName)
 
