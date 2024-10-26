@@ -11,7 +11,23 @@ def word_separator(sentence):
 
     new_sentence = ""
     #    Add your logic here
-
+    upper=0
+    thing=""
+    for i in sentence:
+        if(i.isupper()):
+            thing+="*"+i
+        else:
+            thing+=i
+    stringlist=thing.split("*")
+    stringlist.remove('')
+    for x in range(0,len(stringlist)):
+        for character in stringlist[x]:
+            if character.isupper():
+                if upper == 0:
+                    upper=1
+                elif upper==1:
+                    stringlist[x]=stringlist[x].lower()
+    new_sentence=' '.join(stringlist)
     return new_sentence.strip()
 
 # Example usage

@@ -9,11 +9,13 @@ def initials_generator(personsName):
 
     personsInitials = ""
     #    Add your logic here
-
+    finallist=[]
+    list1=personsName.split()
+    for x in list1:
+        finallist.append(x[0])
+    personsInitials=''.join(finallist)
     return personsInitials.strip()
-
-personsName = input('Enter the users first, middle, and last name')
-
+personsName = input('Enter the users first, middle, and last name\n')
 initials = initials_generator(personsName)
 
 print(initials)
